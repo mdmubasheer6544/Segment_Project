@@ -1,0 +1,79 @@
+.mainTabelBox{
+    width: 390px;
+    height: 390px;
+
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    background: #fff;
+    position: absolute;
+    padding: 25px;
+    left: 35%;
+    top: 30%;
+}
+
+.formHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.closebtn{
+    background: transparent;
+    border: 0;
+    color: red;
+    font-weight: bold;
+}
+.formContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 250px;
+    padding: 20px;
+}
+.nameInputs{
+    padding: 2px 16px;
+}
+.colorInput{
+    width: 300px;
+    height: 32px;
+}
+.btnsection{
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+.addTablebtn{
+    background: #007AFF;
+    padding: 3px 26px;
+    border: 0;
+    border-radius: 5px;
+    margin: 10px;
+    color: #fff;
+}
+button:disabled,
+button[disabled]{
+  background-color: #cccccc;
+  color: #666666;
+}
+.cancelTablebtn{
+    padding: 0px 20px;
+    border: 2px solid #007Aff;
+    border-radius: 5px;
+    margin: 10px;
+    background: transparent;
+}
+.react-input-emoji--container{
+    border-radius: 0 !important;
+    margin: 0 !important;
+}
+.react-input-emoji--input{
+    border:1px solid;
+    max-height: 35px !important;
+    padding: 6px 10px !important;
+
+}
+.react-emoji{
+    width: 344px !important;
+}
+.react-input-emoji--wrapper{
+    width: 299px !important;
+}

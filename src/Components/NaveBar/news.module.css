@@ -1,0 +1,80 @@
+.naveContainer{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px  34px;
+    align-items: center;
+    background: #f889f8cc;
+    box-shadow: 3px 6px 6px rgb(0 0 0 / 60%);
+}
+.naveContainer ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+.links{
+    text-decoration: none;
+    color: #333;
+}
+.naveContainer ul li{
+    margin: 0 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.naveContainer .searchBtn{
+    margin: 0 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    padding: 2px 8px;
+    outline: none;
+    cursor: pointer;
+    background: #dcdcdc;
+}
+.naveContainer .searchInput{
+    border-radius: 5px;
+    border: 0;
+    outline: none;
+    padding: 5px;
+
+}
+
+
+
+.newsContainer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.newsCard{
+    width: 330px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 3px 6px 6px rgb(0 0 0 / 60%); 
+    margin: 30px 24px;
+    position: relative;
+    border-radius:8px;
+    transition:transform 1s ;
+    background-color: #fff;
+}
+.newsCard:hover{
+    transform: scale(1.1);
+}
+.newsCard small{
+    font-weight: bold;
+    position: absolute;
+    left: 10px;
+    top: 1px;
+}
+.newsCard h5{
+    margin: 19px 0px 0px 0px;
+    text-align: center;
+}
+.newsCard img{
+    height: 250px;
+    width: 300px;
+    margin: 15px;
+    border-radius:10px;
+
+}
