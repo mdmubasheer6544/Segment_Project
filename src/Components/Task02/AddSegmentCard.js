@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import "./addTabel.css";
 import InputEmoji from "react-input-emoji";
 const AddSegmentCard = (props) => {
@@ -20,7 +20,7 @@ const AddSegmentCard = (props) => {
     <div className="mainTabelBox">
       <div className="formHeader">
         <h4>Add a Segment</h4>
-        <button className="closebtn" onClick={props.hidshow}>
+        <button className="closebtn" onClick={props.segmentTable}>
           x
         </button>
       </div>
@@ -63,7 +63,7 @@ const AddSegmentCard = (props) => {
         >
           Save
         </button>
-        <button className="cancelTablebtn" onClick={props.hidshow}>
+        <button className="cancelTablebtn" onClick={props.segmentTable}>
           Cancel
         </button>
       </div>

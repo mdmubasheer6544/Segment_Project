@@ -27,6 +27,7 @@ const dummySegment = [
 ];
 const MainEvevnt = () => {
   const [addTabel, setAddTable] = useState(false);
+  // const [addSegmentTabel, setAddSegmentTable] = useState(false);
   const [addSegment, setAddSegment] = useState(false);
   const [addItems, setAddItems] = useState(dummy);
   const [addSegmentItems, setAddSegmentItems] = useState(dummySegment);
@@ -41,6 +42,10 @@ const MainEvevnt = () => {
     setAddSegmentItems((oldValues) => {
       return [...oldValues, items];
     });
+  };
+
+  const segmentHidShow = () => {
+    setAddSegment(!addSegment);
   };
   const hidshow = () => {
     setAddTable(!addTabel);
@@ -84,6 +89,7 @@ const MainEvevnt = () => {
             isSegment="true"
             addSegmentItemFunc={addSegmentItemFunc}
             hidshow={setAddSegment}
+            segmentTable={segmentHidShow}
           />
         )}
       </div>

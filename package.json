@@ -1,5 +1,6 @@
 {
   "name": "myfirstreact",
+  "homepage": "https://mdmubasheer6544.github.io/Segment_Project",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -14,6 +15,7 @@
     "emoji-picker-element": "^1.4.0",
     "emoji-picker-react": "^3.4.4",
     "express": "^4.17.1",
+    "gh-pages": "^3.2.0",
     "mysql": "^2.18.1",
     "react": "^17.0.2",
     "react-bootstrap": "^1.5.2",
@@ -25,6 +27,8 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
